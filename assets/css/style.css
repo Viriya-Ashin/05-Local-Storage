@@ -1,22 +1,23 @@
+/* Apply box-sizing: border-box to all elements and their pseudo-elements for consistent sizing */
 *,
 *::before,
 *::after {
   box-sizing: border-box;
 }
-
+/* Set base font size and font family for the body, with a light blue background color */
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   background-color: #eff5f8;
 }
-
+/* Style for the h2 heading: large font size with specific top and bottom margins */
 h2 {
   font-size: 3em;
   margin: 0px;
   margin-top: 0.45em;
   margin-bottom: 0.45em;
 }
-
+/* Style for the button: dark blue background, rounded corners, white text, with transition effects */
 button {
   background-color: #001b44;
   border-radius: 8px;
@@ -34,16 +35,16 @@ button {
   margin-top: 0.6em;
   float: right;
 }
-
+/* Margin settings for input groups */
 .input-group {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
+/* Style for labels: dark grey color */
 label {
   color: #212121;
 }
-
+/* Style for input fields: light grey background, rounded corners, transition effects */
 input {
   background-color: whitesmoke;
   border-radius: 3px;
@@ -63,7 +64,7 @@ input {
   vertical-align: middle;
   width: 100%;
 }
-
+/* Style for the card: light yellow background, border, shadow, padding, and width */
 .card {
   display: block;
   background-color:#FFFFE0;;
@@ -75,13 +76,13 @@ input {
   padding: 20px;
   width: 60vw;
 }
-
+/* Clear floats for the card */
 .card::after {
   content: " ";
   display: block;
   clear: both;
 }
-
+/* Clear floats for the clearfix class */
 .clearfix::after {
   content: " ";
   display: block;

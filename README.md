@@ -1,47 +1,54 @@
-# 🐛 Object Not Saving as String Using localStorage
+# HTML Structure for Authentication Form
 
-Work with a partner to resolve the following issue(s):
+This HTML document creates a sign-up form within a styled card layout.
 
-* As a developer, I want to save the information from a form as an object using `localStorage`.
+- **Meta Tags**: Set character encoding, viewport settings, and IE compatibility.
+- **External Resources**: Links to a CSS stylesheet and a JavaScript file.
+- **Content**:
+  - **Form Container**: Uses a clearfix for layout control.
+  - **Form Card**: Contains the sign-up form with fields for first name, last name, email, and password.
+  - **Message Placeholder**: An empty `div` for displaying messages.
+  - **Sign-Up Button**: Submits the form.
 
-## Expected Behavior
+# CSS Styling for Authentication Form
 
-When a user clicks a Sign Up button, the form's current values are stored in an object as a string using `localStorage`.
+This CSS code provides a cohesive design for an authentication form, ensuring a user-friendly and visually appealing interface.
 
-## Actual Behavior
+- **Global Settings**: 
+  - Applies `box-sizing: border-box` to all elements for consistent sizing.
+  - Sets base font size and family for the body with a light blue background.
 
-When a user clicks a Sign Up button, the form's current values are not stored in `localStorage`.
+- **Element Styling**:
+  - **h2**: Large font size with specific margins.
+  - **Button**: Dark blue background, rounded corners, white text, and transition effects.
+  - **Input Groups**: Margins for top and bottom spacing.
+  - **Labels**: Dark grey color.
+  - **Inputs**: Light grey background, rounded corners, transition effects.
 
-## Steps to Reproduce the Problem
+- **Card Container**:
+  - Light yellow background, border, shadow, padding, and specified width.
+  - Floats are cleared to ensure proper layout.
 
-Use the following steps to reproduce the problem:
+- **Clearfix**:
+  - Utilizes pseudo-elements to clear floats for proper container management.
 
-1. Open `index.html` in your browser.
+# JavaScript Form Submission and Local Storage
 
-2. Enter data in the form field and click the Sign Up button.
+This JavaScript code snippet handles form submission and stores user input in local storage as JSON.
 
-3. Navigate to Google DevTool's Application tab and note that no data has been saved as a string in `localStorage`.
+- **Element Selection**:
+  - Retrieves input elements by their IDs for first name, last name, email, and password.
+  - Selects the sign-up button.
 
-## Assets
+- **Event Handling**:
+  - Adds a click event listener to the sign-up button.
+  - Prevents the default form submission behavior using `event.preventDefault()`.
 
-The following image demonstrates the web application's appearance and functionality:
-
-![Image showing data inputted in form and saved as a string in LocalStorage.](./images/image_1.png)
-
----
-## 💡 Hints
-
-Which JSON method can you use to return a string?
-
-## 🏆 Bonus
-
-If you have completed this activity, work through the following challenge with your partner to further your knowledge:
+- **Form Submission**:
+  - Creates a user object with trimmed input values.
+  - Stores the user object in local storage using `localStorage.setItem()` after converting it to JSON format with `JSON.stringify()`.
 
 * What is JSON? How is it useful for sending and storing data?
 
 JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax. It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page, or vice versa).
 
-Use [Google](https://www.google.com) or another search engine to research this.
-
----
-© 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
